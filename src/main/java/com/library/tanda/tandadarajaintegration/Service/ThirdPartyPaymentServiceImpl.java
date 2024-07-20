@@ -15,8 +15,8 @@ import org.springframework.web.client.RestTemplate;
 public class ThirdPartyPaymentServiceImpl implements ThirdPartyPaymentService {
     private final RestTemplate restTemplate;
     private final PaymentService paymentService;
-    private final String darajaB2CEndpoint = "https://sandbox.safaricom.co.ke/mpesa/b2c/v1/paymentrequest";
-    private final String darajaB2CStatusEndpoint = "https://sandbox.safaricom.co.ke/mpesa/b2c/v1/paymentstatus";
+    private final String darajaB2CEndpoint = "https://sandbox.safaricom.co.ke/mpesa/b2c/v3/paymentrequest";
+    private final String darajaB2CStatusEndpoint = "https://sandbox.safaricom.co.ke/mpesa/b2c/v3/paymentstatus";
     private final ObjectMapper objectMapper;
     private final Logger LOGGER = LoggerFactory.getLogger(ThirdPartyPaymentService.class);
 
