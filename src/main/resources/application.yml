@@ -1,0 +1,5 @@
+spring:
+  application:
+    name: Tanda Daraja Integration
+  profiles:
+    active: dev
