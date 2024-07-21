@@ -1,11 +1,8 @@
 package com.library.tanda.tandadarajaintegration.integration;
 
-import static org.junit.Assert.assertEquals;
-import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
-
+import com.library.tanda.tandadarajaintegration.Entities.PaymentRequest;
 import com.library.tanda.tandadarajaintegration.Kafka.Service.KafkaConsumerService;
+import com.library.tanda.tandadarajaintegration.Service.ThirdPartyPaymentService;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
@@ -15,8 +12,7 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 
-import com.library.tanda.tandadarajaintegration.Entities.PaymentRequest;
-import com.library.tanda.tandadarajaintegration.Service.ThirdPartyPaymentService;
+import static org.mockito.Mockito.verify;
 
 @ExtendWith(SpringExtension.class)
 public class KafkaConsumerServiceTest {
