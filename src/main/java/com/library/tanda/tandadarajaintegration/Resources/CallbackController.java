@@ -37,7 +37,7 @@ public class CallbackController {
             PaymentRequest request = paymentService.findById(callbackResponse.getId());
 
             if (request == null) {
-                return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Payment request not found");
+                return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Invalid callback request");
             }
 
             request.setStatus(callbackResponse.getStatus());

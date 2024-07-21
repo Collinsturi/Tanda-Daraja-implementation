@@ -22,15 +22,16 @@ spring:
     show-sql: true
     properties:
       hibernate:
-        # Naming strategy
+        # Database Naming strategy
         naming:
           implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
           physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
 
+#sensitive details retracted.
 mpesa:
   daraja:
-    consumerKey: your_consumer_key
-    consumerSecret: your_consumer_secret
+    consumerKey: consumer_key
+    consumerSecret: consumer_secret
     grantType: client_credentials
     oauthEndpoint: https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials
     b2cRequestEndpoint: https://sandbox.safaricom.co.ke/mpesa/b2c/v3/paymentrequest
