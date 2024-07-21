@@ -26,3 +26,16 @@ spring:
         naming:
           implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl
           physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+
+mpesa:
+  daraja:
+    consumerKey: your_consumer_key
+    consumerSecret: your_consumer_secret
+    grantType: client_credentials
+    oauthEndpoint: https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials
+    b2cRequestEndpoint: https://sandbox.safaricom.co.ke/mpesa/b2c/v3/paymentrequest
+    shortCode: business_short_code
+    queueTimeOutURL: https://mydomain.com/b2c/queue
+    resultURL: https://mydomain.com/b2c/result
+    responseType: Completed
+
